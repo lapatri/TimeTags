@@ -12,17 +12,18 @@
         android:text="@string/tag_button"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:padding="80dp"
+        android:padding="60dp"
         android:background="#ffffb67e"
-        android:layout_marginBottom="10px"
-        android:layout_marginTop="10px"/>
+        android:textSize ="20dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"/>
 
     <ListView
         android:id="@+id/listViewTags"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffe083"
-        android:textColor="#cccccc">
+        android:textColor="#556699">
     </ListView>
 
 </LinearLayout>
