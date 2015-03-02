@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/background_material_dark">
 
     <Button
         android:id="@+id/tag_button"
@@ -11,12 +12,15 @@
         android:text="@string/tag_button"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:padding="80dp"/>
+        android:padding="80dp"
+        android:background="#ffffb67e" />
 
     <ListView
         android:id="@+id/listViewTags"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="#fffffee0"
+        android:textColor="#cccccc">
     </ListView>
 
 </LinearLayout>

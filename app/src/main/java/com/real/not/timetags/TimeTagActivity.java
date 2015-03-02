@@ -24,6 +24,10 @@ public class TimeTagActivity extends ActionBarActivity {
 
     private ArrayAdapter<String> adapter; //Updater for list
 
+    private long startTime;
+    private long currentTime;
+    private long elapsedTimeSec;
+
     private String getDateTime(){  //This function came from java-tips.org
         DateFormat dateFormat= new SimpleDateFormat("HH:mm:ss, MM/dd/yyyy ");
         Date date = new Date();
@@ -35,20 +39,22 @@ public class TimeTagActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_time_tag);
 
+        startTime = System.currentTimeMillis();
+
         timeTags.add("Start: "+getDateTime());
 
         listview = (ListView) findViewById(R.id.listViewTags);
 
-        listview.setTranscriptMode(ListView.TRANSCRIPT_MODE_ALWAYS_SCROLL);
-        listview.setStackFromBottom(true);
 
         mTagButton = (Button)findViewById(R.id.tag_button);
 
         mTagButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(TimeTagActivity.this, R.string.tag_toast,Toast.LENGTH_SHORT).show();
-                timeTags.add(getDateTime());
+                currentTime = System.currentTimeMillis();
+                elapsedTimeSec = (currentTime -startTime)/1000;
+
+                timeTags.add(0,Long.toString(elapsedTimeSec));
                 adapter.notifyDataSetChanged();
             }
         });
