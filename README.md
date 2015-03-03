@@ -6,7 +6,7 @@ When the user presses the button, the elapsed time (in seconds) between applicat
 
 ![Alt text](https://github.com/lapatri/TimeTags/blob/master/TimeTags_ScreenShot%20.png "Screen Shot")
 
-Installation Instructions:
+#Installation Instructions
 This is an Android Studio Project.
 First, clone this repository to your computer. Then Open the project in Android Studio. You should be up and running.
 
