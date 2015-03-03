@@ -7,6 +7,8 @@ When the user presses the button, the elapsed time (in seconds) between applicat
 
 
 Installation Instructions:
-
 This is an Android Studio Project.
 First, clone this repository to your computer. Then Open the project in Android Studio. You should be up and running.
+
+Credits:
+The techniques used to "fix up" the button and list were learned by reading the very helpful book: "Android Programming: The Big Nerd Ranch Guide" by Bill PHillips and Brian Hardy. Thanks to a great book!
