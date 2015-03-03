@@ -7,17 +7,9 @@
 
     <Button
         android:id="@+id/tag_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/tag_button"
-        android:textColor="@drawable/button_text_color"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:padding="60dp"
-        android:background="@drawable/button_shape_shadowed"
-        android:textSize ="20dp"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="5dp"/>
+
+        style="@style/TagButton"
+/>
 
     <ListView
         android:id="@+id/listViewTags"
