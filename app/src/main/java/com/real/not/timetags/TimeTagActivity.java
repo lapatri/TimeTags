@@ -18,43 +18,38 @@ import java.util.Date;
 
 public class TimeTagActivity extends ActionBarActivity {
 
-    private Button mTagButton;
     private ArrayList<String>timeTags = new ArrayList<String>();    //List of Time tags
-    private ListView listview;    //Display of list
 
     private ArrayAdapter<String> adapter; //Updater for list
+
+    private DateFormat dateFormat =new SimpleDateFormat("HH:mm:ss, MM/dd/yyyy");
 
     private long startTime;
     private long currentTime;
     private long elapsedTimeSec;
-
-    private String getDateTime(){  //This function came from java-tips.org
-        DateFormat dateFormat= new SimpleDateFormat("HH:mm:ss, MM/dd/yyyy ");
-        Date date = new Date();
-        return dateFormat.format(date);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_time_tag);
 
+        Date todayDate = new Date();
         startTime = System.currentTimeMillis();
 
-        timeTags.add("Start: "+getDateTime());
+        timeTags.add("Start: "+ dateFormat.format(todayDate));
 
-        listview = (ListView) findViewById(R.id.listViewTags);
+        ListView listview = (ListView) findViewById(R.id.listViewTags);
 
 
-        mTagButton = (Button)findViewById(R.id.tag_button);
+        Button mTagButton = (Button) findViewById(R.id.tag_button);
 
         mTagButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 currentTime = System.currentTimeMillis();
-                elapsedTimeSec = (currentTime -startTime)/1000;
+                elapsedTimeSec = (currentTime - startTime) / 1000;
 
-                timeTags.add(0,Long.toString(elapsedTimeSec));
+                timeTags.add(0, Long.toString(elapsedTimeSec));
                 adapter.notifyDataSetChanged();
             }
         });

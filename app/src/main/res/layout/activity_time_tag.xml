@@ -10,19 +10,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tag_button"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
+        android:textColor="@drawable/button_text_color"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:padding="60dp"
-        android:background="#ffffb67e"
+        android:background="@drawable/button_shape_shadowed"
         android:textSize ="20dp"
-        android:layout_marginBottom="3dp"
-        android:layout_marginTop="3dp"/>
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"/>
 
     <ListView
         android:id="@+id/listViewTags"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ffffe083"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/list_shape_normal"
         android:textColor="#556699">
     </ListView>
 
