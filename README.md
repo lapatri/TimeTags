@@ -13,6 +13,6 @@ First, clone this repository to your computer. Then Open the project in Android 
 
 ##Using TimeTags
 This Android Studio Project essentially provides code that you can "copy and paste" into your own project. The formatting of the button is contained in the "TagButton" style and the "button_shape" drawable .xml files.
-The timer functionality is contained in the TimeTagActivity.java.
+The timer functionality is contained in the TimeTagActivity.java file.
 
 
