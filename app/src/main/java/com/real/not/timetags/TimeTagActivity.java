@@ -15,6 +15,11 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
+/**
+ * This TimeTagActivity provides an interface component that displays a button and a list.
+ * When the user presses the button, the elapsed time (in seconds) between startup and the
+ * button being presses, is added to the list.
+ */
 
 public class TimeTagActivity extends ActionBarActivity {
 
