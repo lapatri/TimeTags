@@ -15,5 +15,4 @@ First, clone this repository to your computer. Then Open the project in Android 
 This Android Studio Project essentially provides code that you can "copy and paste" into your own project. The formatting of the button is contained in the "TagButton" style and the "button_shape" drawable .xml files.
 The timer functionality is contained in the TimeTagActivity.
 
-####Credits:
-The techniques used to "fix up" the button and list were learned by reading the very helpful book: "Android Programming: The Big Nerd Ranch Guide" by Bill PHillips and Brian Hardy. Thanks to a great book!
+
